@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .hover\:flex-grow-2:hover {
+    flex-grow: 2;
+  }
+}
+body {
+  background-color: #0d0d0e;
+  background-color: #090909;
+  background-color: #060606;
+}
+
+div:hover > h1 {
+  color: #ffffff;
+}
+div:hover > p {
+  color: #ffffff;
+}
