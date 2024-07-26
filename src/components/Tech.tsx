@@ -23,17 +23,22 @@ export const Tech: React.FC = () => {
 
   return (
     <>
-      <div className="mt-20 w-[90%] max-w-[1200px] flex flex-col md:flex-row items-center justify-between gap-10 mx-auto">
-        {technologies.map((tech) => (
-          <div
-            key={tech.name}
-            className="hover:scale-105 cursor-pointer bg-black-600 p-5 w-full shadow-sm transition duration-200 ease-in-out  hover:bg-black-400 flex-grow hover:flex-grow-2"
-          >
-            <h1 className="text-off-white text-center">{tech.name}</h1>
-            <img className="w-[100px] mx-auto" src={tech.src} alt="" />
-            <p className="p-3 text-off-white text-sm">{tech.text}</p>
-          </div>
-        ))}
+      <div className="mt-20 w-[90%] max-w-[1200px] mx-auto techs">
+        <h2 className="text-off-white text-2xl mb-2">
+          the <span className="text-red">technologies</span> I use
+        </h2>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10">
+          {technologies.map((tech) => (
+            <div
+              key={tech.name}
+              className="hover:scale-105 cursor-pointer bg-black-600 p-5 w-full shadow-sm transition duration-200 ease-in-out  hover:bg-black-400 flex-grow hover:flex-grow-2"
+            >
+              <h1 className="text-off-white text-center">{tech.name}</h1>
+              <img className="w-[100px] mx-auto" src={tech.src} alt="" />
+              <p className="p-3 text-off-white text-sm">{tech.text}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );

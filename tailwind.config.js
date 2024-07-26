@@ -15,6 +15,9 @@ export default {
       'red': '#ff6161'
     },
     extend: {
+      fontFamily: {
+        'zain': ['Zain', 'sans-serif'],
+      },
       boxShadow: {
         '3xl': '0 1px 5px 2px rgba(0, 0, 0, 0.3)',
       }

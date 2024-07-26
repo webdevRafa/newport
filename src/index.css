@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Zain';
+  src: url('./fonts/Zain-Black.ttf') format('truetype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Zain';
+  src: url('./fonts/Zain-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Zain';
+  src: url('./fonts/Zain-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Zain';
+  src: url('./fonts/Zain-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Zain';
+  src: url('./fonts/Zain-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Zain';
+  src: url('./fonts/Zain-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
 @layer utilities {
   .hover\:flex-grow-2:hover {
     flex-grow: 2;
@@ -19,3 +55,5 @@ div:hover > h1 {
 div:hover > p {
   color: #ffffff;
 }
+
+
