@@ -9,15 +9,16 @@ export const Tech: React.FC = () => {
       name: "React",
       text: "React is a JavaScript library for building user interfaces, particularly single-page applications where you can manage the view layer for web and mobile apps. React allows developers to create reusable UI components that make the code easier to manage and maintain.",
     },
-    {
-      src: firebaseLogo,
-      name: "Firebase",
-      text: "Firebase is a platform developed by Google for creating mobile and web applications. It offers a variety of tools and services, such as authentication, real-time database, cloud storage, and hosting, which streamline backend development and allow for real-time data updates.",
-    },
+
     {
       src: tailwindLogo,
       name: "Tailwindcss",
       text: "Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build custom designs without writing any CSS. It allows developers to style applications directly in their markup, promoting a more streamlined and consistent approach to styling.",
+    },
+    {
+      src: firebaseLogo,
+      name: "Firebase",
+      text: "Firebase is a platform developed by Google for creating mobile and web applications. It offers a variety of tools and services, such as authentication, real-time database, cloud storage, and hosting, which streamline backend development and allow for real-time data updates.",
     },
   ];
 
