@@ -32,7 +32,7 @@ export const Tech: React.FC = () => {
           {technologies.map((tech) => (
             <div
               key={tech.name}
-              className="hover:scale-105 cursor-pointer bg-black-600 p-5 w-full shadow-sm transition duration-200 ease-in-out  hover:bg-black-400 flex-grow hover:flex-grow-2"
+              className="md:hover:scale-105 cursor-pointer bg-black-600 p-5 w-full shadow-sm transition duration-200 ease-in-out  hover:bg-black-400 flex-grow hover:flex-grow-2"
             >
               <h1 className="text-off-white text-center">{tech.name}</h1>
               <img className="w-[100px] mx-auto" src={tech.src} alt="" />
