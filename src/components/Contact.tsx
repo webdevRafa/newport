@@ -132,7 +132,7 @@ export const Contact: React.FC = () => {
                 </span>
                 <span className="flex justify-end">
                   <button
-                    className="shadow-md bg-red px-2 font-bold transition duration-150 ease-in-out hover:scale-[130%]"
+                    className="shadow-xl bg-red px-2 font-bold transition duration-150 ease-in-out hover:scale-[130%]"
                     type="submit"
                   >
                     send
