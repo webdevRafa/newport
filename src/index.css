@@ -49,16 +49,3 @@ body {
   background-color: #060606;
 }
 
-div:hover > h1 {
-  color: #ffffff;
-}
-div:hover > p {
-  color: #ffffff;
-}
-
-
-.texture {
-  background-image: url('./assets//texture.svg');
-  background-size: cover;
-  background-position: center;
-}

@@ -2,12 +2,43 @@ import { useState } from "react";
 import contact from "../assets/contact.svg";
 import { XMarkIcon } from "@heroicons/react/20/solid";
 import logo from "../assets/devrafa-logo.svg";
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../firebaseConfig";
+
 export const Contact: React.FC = () => {
   const [menu, setMenu] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [showThankYou, setShowThankYou] = useState<boolean>(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    // Make sure the function name matches
+    e.preventDefault();
+
+    try {
+      await addDoc(collection(db, "submissions"), {
+        name: name,
+        email: email,
+        message: message,
+        timestamp: new Date(),
+      });
+      setName("");
+      setEmail("");
+      setMessage("");
+      setShowThankYou(true);
+      setTimeout(() => setShowThankYou(false), 5000); // hides after 5 seconds
+    } catch (error) {
+      console.error("Error adding document: ", error);
+      alert("Error submitting form");
+    }
+  };
+
   const handleToggle = () => {
     setMenu((prevMenu) => !prevMenu);
     console.log(menu);
   };
+
   return (
     <>
       <div className="w-[90%] max-w-[1000px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between py-[100px] gap-1.5">
@@ -38,10 +69,17 @@ export const Contact: React.FC = () => {
 
       {menu && (
         <div className="font-zain fixed top-[10%] ml-[50%] translate-x-[-50%] w-[90%] h-[500px] max-w-[1000px] bg-black-600 border-red border-2">
-          <div className="flex items-center justify-between px-10 py-2 mb-10">
+          <div className="flex items-center justify-between px-10 py-2 mb-10 gap-2">
             <div>
               <img className="w-[150px]" src={logo} alt="" />
             </div>
+            {showThankYou && (
+              <div className=" w-full p-2 text-white flex justify-center">
+                <h1 className="font-bold inline">
+                  Thanks for reaching out! I'll get back to you soon.
+                </h1>
+              </div>
+            )}
             <div>
               <XMarkIcon
                 onClick={handleToggle}
@@ -52,12 +90,19 @@ export const Contact: React.FC = () => {
 
           <div className="w-full flex items-center justify-center">
             <div>
-              <form action="">
+              <form onSubmit={handleSubmit} action="">
                 <span className="flex items-center justify-between gap-1.5 mb-1.5">
                   <label className="text-white" htmlFor="name-input">
                     Name
                   </label>
-                  <input className="bg-off-white" type="text" id="name-input" />
+                  <input
+                    className="bg-off-white"
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                    id="name-input"
+                  />
                 </span>
                 <span className="flex items-center justify-between gap-1.5 mb-1.5">
                   <label className="text-white" htmlFor="email-input">
@@ -66,6 +111,8 @@ export const Contact: React.FC = () => {
                   <input
                     id="email-input"
                     type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     required
                     className="bg-off-white"
                   />
@@ -77,6 +124,9 @@ export const Contact: React.FC = () => {
                   <textarea
                     className="bg-off-white w-full"
                     name="text-input"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    required
                     id="text-input"
                   ></textarea>
                 </span>
