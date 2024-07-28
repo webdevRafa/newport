@@ -1,7 +1,7 @@
 import { useState } from "react";
 import contact from "../assets/contact.svg";
 import { XMarkIcon } from "@heroicons/react/20/solid";
-
+import logo from "../assets/devrafa-logo.svg";
 export const Contact: React.FC = () => {
   const [menu, setMenu] = useState(false);
   const handleToggle = () => {
@@ -39,11 +39,15 @@ export const Contact: React.FC = () => {
       {menu && (
         <div className="font-zain fixed top-[10%] ml-[50%] translate-x-[-50%] w-[90%] h-[500px] max-w-[1000px] bg-black-600 border-red border-2">
           <div className="flex items-center justify-between px-10 py-2 mb-10">
-            <h1 className="font-zain text-off-white text-1xl">CONTACT</h1>
-            <XMarkIcon
-              onClick={handleToggle}
-              className="size-6 cursor-pointer text-red"
-            />
+            <div>
+              <img className="w-[150px]" src={logo} alt="" />
+            </div>
+            <div>
+              <XMarkIcon
+                onClick={handleToggle}
+                className="size-6 cursor-pointer text-red transition duration-150 ease-in-out hover:scale-[200%]"
+              />
+            </div>
           </div>
 
           <div className="w-full flex items-center justify-center">
@@ -66,7 +70,7 @@ export const Contact: React.FC = () => {
                     className="bg-off-white"
                   />
                 </span>
-                <span className="flex items-center justify-between gap-1.5 mb-1.5">
+                <span className="flex items-center justify-between gap-1.5 mb-5">
                   <label htmlFor="text-input" className="text-white">
                     Message
                   </label>
@@ -77,7 +81,10 @@ export const Contact: React.FC = () => {
                   ></textarea>
                 </span>
                 <span className="flex justify-end">
-                  <button className="bg-red px-2 font-bold" type="submit">
+                  <button
+                    className="shadow-md bg-red px-2 font-bold transition duration-150 ease-in-out hover:scale-[130%]"
+                    type="submit"
+                  >
                     send
                   </button>
                 </span>
