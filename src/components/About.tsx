@@ -1,11 +1,10 @@
 import devrafa from "../assets/devrafapng.png";
+import logo from "../assets/devrafa-logo.svg";
 export const About: React.FC = () => {
   return (
     <>
       <div className="bg-black-600 p-2 sticky top-0">
-        <h1 className="text-red">
-          dev<span className="text-white">rafa</span>
-        </h1>
+        <img className="w-[100px]" src={logo} alt="" />
       </div>
       <div className="mt-20 flex flex-col md:flex-row justify-between gap-5 w-[90%] max-w-[800px] mx-auto">
         <div className="flex items-center justify-center w-full">

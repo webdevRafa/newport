@@ -57,3 +57,8 @@ div:hover > p {
 }
 
 
+.texture {
+  background-image: url('./assets//texture.svg');
+  background-size: cover;
+  background-position: center;
+}
