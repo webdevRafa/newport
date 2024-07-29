@@ -7,6 +7,7 @@ export const Tech: React.FC = () => {
     {
       src: reactLogo,
       name: "React",
+      secret: "You're gay",
       text: "React is a JavaScript library for building user interfaces, particularly single-page applications where you can manage the view layer for web and mobile apps. React allows developers to create reusable UI components that make the code easier to manage and maintain.",
     },
 
@@ -24,7 +25,7 @@ export const Tech: React.FC = () => {
 
   return (
     <>
-      <div className="mt-20 w-[90%] max-w-[1200px] mx-auto techs">
+      <div className="z-40 relative mt-20 w-[90%] max-w-[1200px] mx-auto techs">
         <h2 className="text-off-white text-2xl mb-2">
           the <span className="text-red">technologies</span> I use
         </h2>

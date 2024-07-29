@@ -41,7 +41,7 @@ export const Contact: React.FC = () => {
 
   return (
     <>
-      <div className="w-[90%] max-w-[1000px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between py-[100px] gap-1.5">
+      <div className="relative z-40 w-[90%] max-w-[1000px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between py-[100px] gap-1.5">
         <div className="text-off-white md:px-10">
           <h1 className="font-bold mb-2 text-2xl">What I can do for you</h1>
           <p className="font-light mb-2">
@@ -68,7 +68,7 @@ export const Contact: React.FC = () => {
       </div>
 
       {menu && (
-        <div className="font-zain fixed top-[10%] ml-[50%] translate-x-[-50%] w-[90%] h-[500px] max-w-[1000px] bg-black-600 border-red border-2">
+        <div className="font-zain z-50 fixed top-[10%] ml-[50%] translate-x-[-50%] w-[90%] h-[500px] max-w-[1000px] bg-black-600 border-red border-2">
           <div className="flex items-center justify-between px-10 py-2 mb-10 gap-2">
             <div>
               <img className="w-[150px]" src={logo} alt="" />

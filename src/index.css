@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite; /* Adjust the duration as needed */
+  display: flex;
+  overflow-x: hidden;
+  scrollbar-width: none; /* Firefox */
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused; /* Pause the animation on hover */
+}
+
+.animate-scroll > * {
+  flex: 0 0 auto; /* Ensure items do not shrink or grow */
+  width: 300px; /* Fixed width for items */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.animate-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+
 @font-face {
   font-family: 'Zain';
   src: url('./fonts/Zain-Black.ttf') format('truetype');
