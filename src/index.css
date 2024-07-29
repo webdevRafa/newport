@@ -17,7 +17,24 @@
     background: #090909;
   }
 }
-
+.bgtester {
+  background-image: url('./assets/sunset.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.coffee {
+  background-image: url('./assets/coffee.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.underrated {
+  background-image: url('./assets/beer.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
 .animation-fadeIn {
   animation: fadeIn 1.8s forwards;
 }

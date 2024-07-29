@@ -41,7 +41,7 @@ export const Contact: React.FC = () => {
 
   return (
     <>
-      <div className="relative z-40 w-[90%] max-w-[1000px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between py-[100px] gap-1.5">
+      <div className="relative z-40 w-[90%] max-w-[1000px] my-[100px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between py-[100px] gap-1.5">
         <div className="text-off-white md:px-10">
           <h1 className="font-bold mb-2 text-2xl">How I can help you</h1>
           <p className="font-light mb-2">

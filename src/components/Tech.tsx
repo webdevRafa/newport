@@ -24,7 +24,7 @@ export const Tech: React.FC = () => {
   ];
 
   return (
-    <div className="z-40 relative mt-20 w-[90%] max-w-[1200px] mx-auto techs">
+    <div className="z-40 relative my-20 w-[90%] max-w-[1200px] mx-auto techs">
       <h2 className="text-off-white text-2xl mb-2">
         the <span className="text-red">technologies</span> I use
       </h2>
