@@ -1,16 +1,16 @@
+import React from "react";
 import reactLogo from "../assets/react.png";
 import tailwindLogo from "../assets/tailwind.svg";
 import firebaseLogo from "../assets/firebase.svg";
 
 export const Tech: React.FC = () => {
-  let technologies = [
+  const technologies = [
     {
       src: reactLogo,
       name: "React",
       secret: "You're gay",
       text: "React is a JavaScript library for building user interfaces, particularly single-page applications where you can manage the view layer for web and mobile apps. React allows developers to create reusable UI components that make the code easier to manage and maintain.",
     },
-
     {
       src: tailwindLogo,
       name: "Tailwindcss",
@@ -24,24 +24,23 @@ export const Tech: React.FC = () => {
   ];
 
   return (
-    <>
-      <div className="z-40 relative mt-20 w-[90%] max-w-[1200px] mx-auto techs">
-        <h2 className="text-off-white text-2xl mb-2">
-          the <span className="text-red">technologies</span> I use
-        </h2>
-        <div className="flex flex-col md:flex-row items-center justify-between gap-10">
-          {technologies.map((tech) => (
-            <div
-              key={tech.name}
-              className="hover:scale-105 cursor-pointer bg-black-600 p-5 w-full shadow-sm transition duration-200 ease-in-out  hover:bg-black-400 flex-grow hover:flex-grow-2"
-            >
-              <h1 className="text-off-white text-center">{tech.name}</h1>
-              <img className="w-[100px] mx-auto" src={tech.src} alt="" />
-              <p className="p-3 text-off-white text-sm">{tech.text}</p>
-            </div>
-          ))}
-        </div>
+    <div className="z-40 relative mt-20 w-[90%] max-w-[1200px] mx-auto techs">
+      <h2 className="text-off-white text-2xl mb-2">
+        the <span className="text-red">technologies</span> I use
+      </h2>
+      <div className="flex flex-col md:flex-row items-center justify-between gap-10">
+        {technologies.map((tech, index) => (
+          <div
+            key={tech.name}
+            className="hover:scale-105 cursor-pointer bg-black-600 p-5 w-full shadow-sm transition duration-200 ease-in-out hover:bg-black-400 flex-grow hover:flex-grow-2 animation-fadeIn"
+            style={{ animationDelay: `${index * 0.5}s` }}
+          >
+            <h1 className="text-off-white text-center">{tech.name}</h1>
+            <img className="w-[100px] mx-auto" src={tech.src} alt={tech.name} />
+            <p className="p-3 text-off-white text-sm">{tech.text}</p>
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };

@@ -7,6 +7,7 @@ function App() {
     <>
       <About />
       <Tech />
+      {/* background image fixed */}
       <div className="relative z-0">
         <div className="fixed top-0 left-0 w-full h-[100vh] z-0 opacity-10">
           <img className="object-cover" src={sunset} alt="" />
@@ -14,9 +15,6 @@ function App() {
       </div>
       <Contact />
       <div className="h-[800px]"></div>
-      <div className="bg-black-800 h-[800px] w-full relative z-40">
-        <h1>testing</h1>
-      </div>
     </>
   );
 }

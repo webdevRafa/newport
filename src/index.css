@@ -2,36 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes scroll {
+@keyframes fadeIn {
   0% {
-    transform: translateX(100%);
+    scale: 1;
+    background: #090909;
+  }
+  50% {
+    scale: 1.05;
+    background: #0d0d0e;
+
   }
   100% {
-    transform: translateX(-100%);
+    scale: 1;
+    background: #090909;
   }
 }
 
-.animate-scroll {
-  animation: scroll 30s linear infinite; /* Adjust the duration as needed */
-  display: flex;
-  overflow-x: hidden;
-  scrollbar-width: none; /* Firefox */
+.animation-fadeIn {
+  animation: fadeIn 1.8s forwards;
 }
-
-.animate-scroll:hover {
-  animation-play-state: paused; /* Pause the animation on hover */
-}
-
-.animate-scroll > * {
-  flex: 0 0 auto; /* Ensure items do not shrink or grow */
-  width: 300px; /* Fixed width for items */
-}
-
-/* Hide scrollbar for Chrome, Safari, and Opera */
-.animate-scroll::-webkit-scrollbar {
-  display: none;
-}
-
 
 @font-face {
   font-family: 'Zain';

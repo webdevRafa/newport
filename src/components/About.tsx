@@ -12,7 +12,10 @@ export const About: React.FC = () => {
           <div className="flex items-center justify-center">
             <div className="p-5 cursor-pointer text-off-white transition duration-150 ease-in-out md:hover:scale-110">
               <h1 className="text-left text-3xl mb-2 font-zain">
-                <span className=" text-red">welcome</span> to my page
+                <span className="animate-pulse text-red md:text-5xl">
+                  welcome
+                </span>{" "}
+                to my page
               </h1>
               <p className="font-light">
                 Hey, I'm Rafa, a web developer who's all about crafting awesome
@@ -30,9 +33,9 @@ export const About: React.FC = () => {
         </div>
       </div>
 
-      <div className="relative z-40 mt-20 text-off-white mx-auto w-[90%] max-w-[800px] flex justify-center">
+      <div className="relative z-40 mt-5 text-off-white mx-auto w-[90%] max-w-[800px] flex justify-center">
         <div className="cursor-pointer transition duration-150 ease-in-out md:hover:scale-110">
-          <p className="text-sm md:text-1xl mb-2 md:mb-0">
+          <p className="text-sm md:text-2xl mb-2 md:mb-0">
             I have a passion for turning cool ideas into awesome websites.
             Whether I’m crafting a sleek site for a local business or diving
             into a complex web app, I put my all into every project.
