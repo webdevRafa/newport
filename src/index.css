@@ -17,17 +17,19 @@
     background: #090909;
   }
 }
-.bgtester {
+.img-bg {
   background-image: url('./assets/sunset.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+
 }
 .coffee {
-  background-image: url('./assets/coffee.jpg');
+  background-image: url('./assets/resolve.svg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+
 }
 .underrated {
   background-image: url('./assets/beer.jpg');
