@@ -1,51 +1,36 @@
-import devrafa from "../assets/rafas.svg";
-import logo from "../assets/devrafa-logo.svg";
+import resolve from "../assets/resolve.png";
 
 export const About: React.FC = () => {
   return (
-    <>
-      {/* NAV COMPONENT */}
-      <div className="bg-black-600 p-2 sticky top-0 flex z-50">
-        <img className="w-[100px]" src={logo} alt="" />
+    <div className="gap-2 mx-auto w-full max-w-[1200px] items-center flex flex-col md:flex-row text-white relative z-40">
+      <div>
+        <img src={resolve} alt="" />
       </div>
+      <div className="p-3">
+        <h1 className="text-center font-orbitron font-bold text-4xl mb-2">
+          UNYIELDING RESOLVE
+        </h1>
+        <p className="mb-2">
+          My journey as a developer is filled with challenges and errors, but
+          it’s through these trials that my resolve is forged. Just as a
+          sculptor shapes a masterpiece from raw stone, I craft elegant
+          solutions from lines of code.
+        </p>
 
-      {/* WELCOME TO MY PAGE */}
-      <div className="z-40 relative mt-20 flex flex-col md:flex-row justify-between gap-5 w-[90%] max-w-[800px] mx-auto">
-        <div className="flex items-center justify-center w-full">
-          <div className="flex items-center justify-center">
-            <div className="p-5 cursor-pointer text-off-white transition duration-150 ease-in-out md:hover:scale-110">
-              <h1 className="text-left text-3xl mb-2 font-zain">
-                <span className="animate-pulse text-red md:text-5xl">
-                  welcome
-                </span>{" "}
-                to my page
-              </h1>
-              <p className="font-light">
-                Hey, I'm Rafa, a web developer who's all about crafting awesome
-                online experiences.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="w-full flex items-center justify-center">
-          <img
-            className="cursor-pointer w-full transition"
-            src={devrafa}
-            alt=""
-          />
-        </div>
-      </div>
+        <p className="mb-2">
+          Each keystroke is a step forward in a labyrinth of possibilities. When
+          I encounter obstacles, I don't see dead ends; I see opportunities to
+          innovate and grow. My passion for technology drives me to push
+          boundaries and redefine what’s possible.
+        </p>
 
-      <div className="relative z-40 mt-5 text-off-white mx-auto w-[90%] max-w-[800px] flex justify-center">
-        <div className="cursor-pointer transition duration-150 ease-in-out md:hover:scale-110">
-          <p className="text-sm md:text-2xl mb-2 md:mb-0">
-            I have a passion for transforming cool ideas into stunning websites.
-            Whether I'm designing a sleek site for a local business or
-            developing a complex web app, I dedicate myself fully to every
-            project.
-          </p>
-        </div>
+        <p className="mb-2">
+          Whether it’s debugging a stubborn error or navigating the complexities
+          of a new framework, I embrace every challenge with determination and a
+          commitment to excellence. My resolve is unyielding, and my dedication
+          to crafting extraordinary digital experiences is unwavering.
+        </p>
       </div>
-    </>
+    </div>
   );
 };

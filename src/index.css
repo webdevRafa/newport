@@ -17,8 +17,13 @@
     background: #090909;
   }
 }
+.fixed-bg {
+  background-image: url('./assets/rafas.svg');
+  background-position: center;
+  background-size: cover;
+}
 .img-bg {
-  background-image: url('./assets/sunset.jpg');
+  background-image: url('./assets/pc-room.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
