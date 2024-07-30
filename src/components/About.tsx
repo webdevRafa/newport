@@ -8,7 +8,7 @@ export const About: React.FC = () => {
       </div>
       <div className="p-3">
         <h1 className="text-center font-orbitron font-bold text-4xl mb-2">
-          UNYIELDING RESOLVE
+          UNYIELDING RESOLVE.
         </h1>
         <p className="mb-2 text-md font-light">
           My journey as a developer is filled with challenges and errors, but
