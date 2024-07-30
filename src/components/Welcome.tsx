@@ -30,9 +30,9 @@ export const Welcome: React.FC = () => {
         </div>
       </div>
 
-      <div className="relative z-40 mt-5 text-off-white mx-auto w-[90%] max-w-[800px] flex justify-center">
-        <div className="cursor-pointer transition duration-150 ease-in-out md:hover:scale-110">
-          <p className="text-sm md:text-2xl mb-2 md:mb-0">
+      <div className="relative z-40 mt-5 text-off-white mx-auto w-[90%] max-w-[1200px] flex justify-center">
+        <div className="flex justify-start cursor-pointer transition duration-150 ease-in-out md:hover:scale-110">
+          <p className="text-sm md:text-2xl mb-2 md:mb-0 font-light">
             I have a passion for transforming cool ideas into stunning websites.
             Whether I'm designing a sleek site for a local business or
             developing a complex web app, I dedicate myself fully to every

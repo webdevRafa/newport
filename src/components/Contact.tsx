@@ -74,7 +74,7 @@ export const Contact: React.FC = () => {
           onClick={handleToggle}
           className="md:hover:scale-110 transition duration-150 ease-in-out cursor-pointer hover:border hover:border-red"
         >
-          <img className="w-[300px]" src={contact} alt="" />
+          <img className="p-1 bg-white w-[300px]" src={contact} alt="" />
         </div>
       </div>
 

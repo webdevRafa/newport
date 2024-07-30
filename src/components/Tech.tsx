@@ -32,7 +32,7 @@ export const Tech: React.FC = () => {
         {technologies.map((tech, index) => (
           <div
             key={tech.name}
-            className="hover:scale-105 cursor-pointer bg-black-600 hover:bg-black-400 p-5 w-full shadow-sm transition duration-200 ease-in-out  flex-grow hover:flex-grow-2"
+            className="border-4 cards hover:scale-105 cursor-pointer bg-black-600 p-5 w-full shadow-sm transition duration-200 ease-in-out  flex-grow hover:flex-grow-2"
             style={{ animationDelay: `${index * 0.5}s` }}
           >
             <h1 className="text-off-white text-center">{tech.name}</h1>
