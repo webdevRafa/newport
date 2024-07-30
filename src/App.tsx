@@ -4,7 +4,6 @@ import { Tech } from "./components/Tech";
 import { Navbar } from "./components/Navbar";
 import { About } from "./components/About";
 import { Background } from "./components/Background";
-import pic from "./assets/rafas.svg";
 function App() {
   return (
     <>
