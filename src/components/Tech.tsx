@@ -25,8 +25,8 @@ export const Tech: React.FC = () => {
 
   return (
     <div className="z-40 relative my-20 w-[90%] max-w-[1200px] mx-auto techs">
-      <h2 className="text-off-white text-2xl mb-2">
-        the <span className="text-red">technologies</span> I use
+      <h2 className="text-off-white text-2xl mb-2 font-orbitron font-bold">
+        MY <span className="text-red">STACK</span>
       </h2>
       <div className="flex flex-col md:flex-row items-center justify-between gap-10">
         {technologies.map((tech, index) => (

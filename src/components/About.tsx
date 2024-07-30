@@ -4,9 +4,12 @@ import logo from "../assets/devrafa-logo.svg";
 export const About: React.FC = () => {
   return (
     <>
+      {/* NAV COMPONENT */}
       <div className="bg-black-600 p-2 sticky top-0 flex z-50">
         <img className="w-[100px]" src={logo} alt="" />
       </div>
+
+      {/* WELCOME TO MY PAGE */}
       <div className="z-40 relative mt-20 flex flex-col md:flex-row justify-between gap-5 w-[90%] max-w-[800px] mx-auto">
         <div className="flex items-center justify-center w-full">
           <div className="flex items-center justify-center">
@@ -36,9 +39,10 @@ export const About: React.FC = () => {
       <div className="relative z-40 mt-5 text-off-white mx-auto w-[90%] max-w-[800px] flex justify-center">
         <div className="cursor-pointer transition duration-150 ease-in-out md:hover:scale-110">
           <p className="text-sm md:text-2xl mb-2 md:mb-0">
-            I have a passion for turning cool ideas into awesome websites.
-            Whether I’m crafting a sleek site for a local business or diving
-            into a complex web app, I put my all into every project.
+            I have a passion for transforming cool ideas into stunning websites.
+            Whether I'm designing a sleek site for a local business or
+            developing a complex web app, I dedicate myself fully to every
+            project.
           </p>
         </div>
       </div>

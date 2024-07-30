@@ -25,7 +25,7 @@
 
 }
 .coffee {
-  background-image: url('./assets/resolve.svg');
+  background-image: url('./assets/resolve.png');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -39,6 +39,41 @@
 }
 .animation-fadeIn {
   animation: fadeIn 1.8s forwards;
+}
+@font-face {
+  font-family: 'Orbitron';
+  src: url('./fonts/Orbitron-Black.ttf') format('truetype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('./fonts/Orbitron-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('./fonts/Orbitron-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('./fonts/Orbitron-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('./fonts/Orbitron-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('./fonts/Orbitron-SemiBold.ttf') format('truetype');
+  font-weight: 600;
 }
 
 @font-face {
