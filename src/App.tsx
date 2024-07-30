@@ -4,7 +4,7 @@ import { Tech } from "./components/Tech";
 import { Navbar } from "./components/Navbar";
 import { About } from "./components/About";
 import { Background } from "./components/Background";
-
+import pic from "./assets/rafas.svg";
 function App() {
   return (
     <>
@@ -14,7 +14,8 @@ function App() {
       <About />
       <Contact />
       <Background />
-      <div className="h-[700px]"></div>
+
+      <div className="h-[2000px]"></div>
     </>
   );
 }

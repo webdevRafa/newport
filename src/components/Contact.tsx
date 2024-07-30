@@ -1,5 +1,5 @@
 import { useState } from "react";
-import contact from "../assets/contact.svg";
+import contact from "../assets/white-contact.svg";
 import { XMarkIcon } from "@heroicons/react/20/solid";
 import logo from "../assets/devrafa-logo.svg";
 import { collection, addDoc } from "firebase/firestore";
@@ -41,9 +41,11 @@ export const Contact: React.FC = () => {
 
   return (
     <>
-      <div className="relative z-40 w-[90%] max-w-[1000px] my-[100px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between py-[100px] gap-1.5">
-        <div className="text-off-white md:px-10">
-          <h1 className="font-bold mb-2 text-2xl">How I can help you</h1>
+      <div className="relative z-40 w-[90%] max-w-[1000px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between my-[100px] gap-1.5">
+        <div className="text-white md:px-10">
+          <h1 className="font-bold font-orbitron mb-2 text-3xl">
+            How I can help you
+          </h1>
           <p className="font-light mb-2">
             From sleek, responsive websites to robust web applications, I offer
             a range of tailored services to meet your needs. Here’s what I
@@ -51,13 +53,17 @@ export const Contact: React.FC = () => {
           </p>
           <ul className="pl-3 mb-5 md:mb-0">
             <li className="my-1.5 text-sm">
-              <span className="text-red">Digital Brochures</span>: Showcase your
-              services with style and elegance.
+              <span className="text-red font-bold font-orbitron">
+                Digital Brochures
+              </span>
+              : Showcase your services with style and elegance.
             </li>
             <li className="text-sm">
-              <span className="text-red">Full Websites</span>: Build dynamic and
-              interactive sites powered by Firebase for comprehensive data
-              management.
+              <span className="text-red font-bold font-orbitron">
+                Full Websites
+              </span>
+              : Build dynamic and interactive sites powered by Firebase for
+              comprehensive data management.
             </li>
           </ul>
           <h2 className="mt-5">
